@@ -1,0 +1,34 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "dp-model-audit"
+version = "0.1.0"
+description = "Differential-privacy-certified fairness and safety audits for ML models on sensitive evaluation data"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "Apache-2.0" }
+authors = [{ name = "Leo" }]
+keywords = ["differential-privacy", "ai-governance", "fairness", "model-audit",
+            "responsible-ai", "privacy", "ml-safety"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Security",
+]
+dependencies = ["numpy>=1.21"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[project.urls]
+Homepage = "https://github.com/YOURNAME/dp-model-audit"
+Issues = "https://github.com/YOURNAME/dp-model-audit/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/dp_model_audit"]
