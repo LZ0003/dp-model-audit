@@ -15,9 +15,6 @@ with a mathematical guarantee. This supplies exactly that missing layer.
 
 ## Why a wedge, not a platform
 - Governance platforms (model cards, audit workflows, policy) are crowded.
-- The ONE capability they lack is DP-certified metric release on sensitive
-  eval sets. It is a feature, not a product -- so BE the feature, and become
-  the default privacy layer those platforms integrate.
 - Distribution strategy: integrate into an existing governance stack rather
   than compete with it. The moat is the math + the audit trail, not the UI.
 
